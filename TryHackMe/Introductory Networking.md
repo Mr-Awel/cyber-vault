@@ -134,15 +134,6 @@ This room laid the groundwork for understanding the architecture and protocols t
 
 ---
 
-## Lessons Learned
-- **Fundamental Models:**  
-  Understanding the OSI and TCP/IP models clarifies how data travels from one point to another—essential for deeper network troubleshooting.
-- **Protocol Functions:**  
-  Recognizing the role of each layer (from physical transmission to application services) is key to both theory and practice.
-- **Practical Command Utility:**  
-  Tools like ping, traceroute, whois, and dig are indispensable for identifying connectivity issues, tracing paths, and gathering network intelligence.
-- **Interconnected Knowledge:**  
-  Merging theory with hands-on command usage makes you proficient in diagnosing and solving real-world networking challenges.
 
 
 

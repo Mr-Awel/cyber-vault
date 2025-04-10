@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TryHackMe/Linux Fundamentals Part  1 Test.md",
+                "file": "TryHackMe/Linux Fundamentals Part  1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux Fundamentals Part  1 Test"
+              "title": "Linux Fundamentals Part  1"
             }
           }
         ]
@@ -179,11 +179,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a879d5d0b618f199",
+  "active": "de84cb4e5e057b6b",
   "lastOpenFiles": [
     "TryHackMe/Introductory Networking.md",
     "PythonCrashCourse",
-    "TryHackMe/Linux Fundamentals Part  1 Test.md",
+    "TryHackMe/Linux Fundamentals Part  1.md",
     "Python Crash Course",
     "TryHackMe",
     "Welcome.md",

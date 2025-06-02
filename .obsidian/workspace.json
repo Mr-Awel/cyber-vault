@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "Linux Fundamentals Part  1"
             }
+          },
+          {
+            "id": "350ec6b11db3c558",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
         ]
       }
@@ -182,8 +194,9 @@
   "active": "de84cb4e5e057b6b",
   "lastOpenFiles": [
     "TryHackMe/Introductory Networking.md",
-    "PythonCrashCourse",
     "TryHackMe/Linux Fundamentals Part  1.md",
+    "TryHackMe/Linux Fundamentals Part  1 Test.md",
+    "PythonCrashCourse",
     "Python Crash Course",
     "TryHackMe",
     "Welcome.md",

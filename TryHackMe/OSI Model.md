@@ -13,7 +13,7 @@
 
 -**Presentation** Layer makes sure that, no matter what formats or encryption each application uses, the data is packaged into a common, compressed/encrypted “lingua franca” before it goes down to Transport (and unpacks back up on the far side).
 
-----------------------------------
+---
 ## **Questions**
 
 What does the "OSI" in "OSI Model" stand for?

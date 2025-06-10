@@ -13,7 +13,7 @@ What is the maximum length of a subdomain?
 **=63**
 
 Which of the following characters cannot be used in a subdomain ( 3 b _ - )?
-**=_
+=_
 
 What is the maximum length of a domain name?
 **=253**

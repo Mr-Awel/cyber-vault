@@ -33,7 +33,7 @@ When a device joins a network and hasn’t been given a fixed (manual) IP addres
 - DHCP Request (Client → Broadcast/Server)
 - DHCP ACK (Server → Client)
 
-----------------------------------
+---
 ## **Questions**
 
 What does LAN stand for?

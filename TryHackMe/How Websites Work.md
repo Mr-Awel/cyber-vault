@@ -41,12 +41,3 @@ Keep picturing that bulletin board: every note gets inspected before it goes up.
 
 What term best describes the component of a web application rendered by your browser?
 **=Front End**
-
-What does the S in HTTPS stand for?
-**=Secure**
-
-What HTTP protocol is being used in the above example?
-**=HTTP/1.1**
-
-What HTTP protocol is being used in the above example?
-**=Content-Length**

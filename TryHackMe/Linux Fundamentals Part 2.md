@@ -1,4 +1,99 @@
+### 1 SSH (Remote Terminal Super-power)
 
+- **What it is:** Secure Shell = encrypted tunnel to run commands on another machine.
+    
+- **Syntax:** `ssh username@IP`
+    
+    - Example: `ssh tryhackme@10.10.43.102`
+        
+- **Login flow:** first-time **yes** → type password (no on-screen feedback) → you now control the _remote_ shell, not your own.
+    
+- **Why it matters:** same protocol pros use; lets you practise on TryHackMe AttackBox + target VM.
+    
+
+---
+
+### 2 Flags & Help on Any Command
+
+- **Short flag:** `-a`  Long flag: `--all`
+    
+- **Default vs. extended:** `ls` shows visible files; `ls -a` reveals hidden `.` files.
+    
+- **Quick reference:** `<command> --help`
+    
+- **Deep dive manual:** `man <command>` (scroll ↑↓ / quit with `q`).
+    
+
+---
+
+### 3 Core Filesystem Commands
+
+|Command|Purpose|Example|
+|---|---|---|
+|`touch`|Create empty file|`touch note`|
+|`mkdir`|Create directory|`mkdir project`|
+|`cp`|Copy file/dir|`cp note note_backup`|
+|`mv`|Move _or_ rename|`mv note_backup note_final`|
+|`rm`|Delete file|`rm note_final`|
+|`rm -R`|Delete directory recursively|`rm -R project`|
+|`file`|Identify file type|`file note` → “ASCII text”|
+
+**Pro-tip:** use full paths (`cp src/file /tmp/target`).
+
+---
+
+### 4 Permissions 101 (`ls -l`)
+
+- Pattern: `<type><owner><group><other>` → `-rw-r--r--`
+    
+    - `r` read `w` write `x` execute
+        
+- Ownership columns: user • group.
+    
+- Granularity: owner + group + everyone-else can each have different rights.
+    
+
+---
+
+### 5 Switching Users (`su`)
+
+- Become another user: `su user2` (asks for user2’s password).
+    
+- Full login shell: `su -l user2` (drops you in `/home/user2`, loads their env).
+    
+- Requires root or knowledge of target user’s password.
+    
+
+---
+
+### 6 Key Root Directories (Mental Map)
+
+|Directory|“District” Analogy|Typical Contents / Why You Care|
+|---|---|---|
+|`/etc`|City Hall (configs)|`sudoers`, `passwd`, `shadow`|
+|`/var`|Factory & Logyard|Logs (`/var/log`), databases, backups|
+|`/root`|Mayor’s Mansion|Root user’s home directory|
+|`/tmp`|Public Drop-off|World-writable scratch space, wiped on reboot|
+
+---
+
+### 7 Practice Workflow
+
+1. **SSH in**: `ssh tryhackme@IP`
+    
+2. **Create test assets**: `mkdir lab && cd lab && touch demo`
+    
+3. **Copy / move / delete** until commands feel automatic.
+    
+4. **Inspect permissions**: `ls -l`, then try accessing as another user with `su`.
+    
+5. **Explore system**:
+    
+    - Configs: `ls /etc`
+        
+    - Logs: `ls /var/log`
+        
+    - Temp stash: `cp script.sh /tmp`
 
 
 ---

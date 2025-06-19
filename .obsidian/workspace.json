@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security+ SYO 701/Domain 2 – Threats, Vulnerabilities, and Mitigations/Chapter 5 - Compare and contrast common  threat actors and motivations.md",
+                "file": "TryHackMe/Linux Fundamentals Part 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 5 - Compare and contrast common  threat actors and motivations"
+              "title": "Linux Fundamentals Part 3"
             }
           },
           {
@@ -206,24 +206,29 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "a879d5d0b618f199",
+  "active": "80a97afbd4746725",
   "lastOpenFiles": [
-    "Security+ SYO 701/Domain 1 – General Security Concepts/Chapter 3 - Explain the importance of change  management processes and the  impact to security.md",
-    "Security+ SYO 701/Domain 2 – Threats, Vulnerabilities, and Mitigations/Chapter 5 - Compare and contrast common  threat actors and motivations.md",
-    "Security+ SYO 701/Domain 1 – General Security Concepts/Chapter 4 - Explain the importance of using  appropriate cryptographic solutions.md",
-    "TryHackMe/Introductory Networking.md",
     "TryHackMe/Linux Fundamentals Part 2.md",
+    "TryHackMe/Linux Fundamentals Part 3.md",
     "TryHackMe/Linux Fundamentals Part 1.md",
+    "Security+ SYO 701/Domain 2 – Threats, Vulnerabilities, and Mitigations/Chapter 6 - Explain common threat vectors and  attack surfaces.md",
+    "Security+ SYO 701/Domain 1 – General Security Concepts/Chapter 1 - Categories and Types of Security Controls.md",
+    "Images/Star Topology.jpg",
+    "Images/OSI Model Diagram.png",
+    "Images/Ring Topology.jpg",
     "TryHackMe/DNS in Detail.md",
-    "TryHackMe/Putting it all together.md",
+    "TryHackMe/Introductory Networking.md",
     "TryHackMe/HTTP in Detail.md",
     "TryHackMe/How Websites Work.md",
+    "TryHackMe/Extending Your Network.md",
+    "Security+ SYO 701/Domain 2 – Threats, Vulnerabilities, and Mitigations/Chapter 5 - Compare and contrast common  threat actors and motivations.md",
+    "Security+ SYO 701/Domain 1 – General Security Concepts/Chapter 3 - Explain the importance of change  management processes and the  impact to security.md",
+    "Security+ SYO 701/Domain 1 – General Security Concepts/Chapter 4 - Explain the importance of using  appropriate cryptographic solutions.md",
+    "TryHackMe/Putting it all together.md",
     "Security+ SYO 701/Domain 1 – General Security Concepts/Chapter 2 -  Summarize fundamental security  concepts.md",
     "TryHackMe/Intro to LAN.md",
     "TryHackMe/Packets & Frames.md",
     "TryHackMe/OSI Model.md",
-    "TryHackMe/Extending Your Network.md",
-    "Security+ SYO 701/Domain 1 – General Security Concepts/Chapter 1 - Categories and Types of Security Controls.md",
     "Images/Domain Hierarchy.png",
     "Security+ SYO 701/Domain 6 – Cryptography & PKI",
     "Security+ SYO 701/Domain 5 – Security Program Management and Oversight",
@@ -234,10 +239,7 @@
     "Security+ SYO 701/Untitled.md",
     "Security+ SYO 701/Untitled.canvas",
     "Security+ SYO 701",
-    "Images/OSI Model Diagram.png",
     "Images/Bus Topology.jpg",
-    "Images/Star Topology.jpg",
-    "Images/Ring Topology.jpg",
     "Images",
     "TryHackMe/Linux Fundamentals Part  1 Test.md",
     "PythonCrashCourse",

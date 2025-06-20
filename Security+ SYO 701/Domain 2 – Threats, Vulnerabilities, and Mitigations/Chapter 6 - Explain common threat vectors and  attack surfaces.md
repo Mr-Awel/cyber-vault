@@ -1,111 +1,144 @@
-
-### 📋 Exam Objective 2.2 — Common Threat Vectors & Attack Surfaces
-
-_Big picture: Know **where** the bad guys slip in so you can slam the door shut._ 
+_(CompTIA Security+ ▶ Exam Obj 2.2)_
 
 ---
 
-#### 📨 Message-Based Vectors
+### 💌 Message-Based Vectors – “Inbox & IM as Trojan Horse”
 
-- **Email (phishing / spear-phishing)** – fake “action required” mails lure clicks or creds.
-    
-- **SMS (smishing)** – “Your package is held—pay $1” texts push malicious links.
-    
-- **Instant-Messaging** – DM with “funny video 😂” attachment = trojan ride-along.  
-    _Real-world hook: 91% of breaches start with a phish; inbox = battlefield._ 
-    
+_Why it matters:_ Most breaches still start with a click.
 
-#### 🖼️ Image-Based Vectors
-
-- Malware or C2 beacons hidden with steganography inside .jpg/.png.
+- **Email phishing** → fake IRS refund, rogue invoices, malware-rigged attachments.
     
-- Opening or auto-previewing the file triggers the payload.  
-    _Think of it as a postcard with invisible ink instructions for the attacker._ 
+- **Smishing (SMS)** → “Your package is stuck, tap to track” text harvests creds.
     
-
-#### 📁 File-Based Vectors
-
-- Weaponized docs, installers, or scripts exploit app flaws on open.
-    
-- Common faces: macro-laden Office docs, trojanized freeware, rogue PDFs.  
-    _Hook: “Free PDF merger” that actually merges your machine into a botnet._ 
-    
-
-#### ☎️ Voice-Call Vectors
-
-- **Vishing** & caller-ID spoofing harvest secrets (“This is your bank’s fraud team…”).
-    
-- Voicemail links or callbacks funnel victims to fake IVR systems.  
-    _Treat unknown callers like unknown USBs—don’t plug in your info._ 
-    
-
-#### 💾 Removable-Device Vectors
-
-- Infected USBs dropped in lobbies; curiosity = compromise.
-    
-- BadUSB firmware swaps turn drives into rogue keyboards.  
-    _Defense: disable autorun, force scans, train staff to hand found drives to SecOps._ 
-    
-
-#### 🛠️ Vulnerable Software
-
-- Bugs, weak defaults, or outdated libs invite exploits.
-    
-- **Client-based vs. agentless scans**: agents give depth; agentless (Nmap) gives speed/stealth.  
-    _Patch Tuesday is cheaper than Breach Friday._ 
-    
-
-#### 🕰️ Unsupported Systems & Legacy Apps
-
-- No vendor patches = public exploit playground.
-    
-- Isolate, virtualize, or retire—don’t pretend “internal only” is protection. Chapter 6
-    
-
-#### 🌐 Unsecure Networks
-
-- **Wireless:** Open Wi-Fi = plaintext eavesdropping; hide SSID, enable WPA3, use MAC filtering.
-    
-- **Wired:** Live wall-jack is an unlocked basement window; enforce 802.1X, disable idle ports.
-    
-- **Bluetooth PAN:** Easy pairing → blue-snarfing; keep BT off unless in use.  
-    _Bad RF doesn’t need physical keys to walk in._ Chapter 6
-    
-
-#### 🔓 Open Service Ports & Default Creds
-
-- Port 3389 exposed + “admin/admin” = attacker fast-track.
-    
-- Conduct routine port sweeps; change factory logins day-zero.  
-    _If Shodan can find it, so can everyone else._ Chapter 6
-    
-
-#### 🔗 Supply-Chain Weaknesses
-
-- **MSPs:** One compromise, many clients burned. Demand audits & segmentation.
-    
-- **Vendors/Suppliers:** Third-party portals and firmware updates carry stowaways.
-    
-- Build security clauses into contracts; verify, don’t trust.  
-    _You inherit every partner’s hygiene—good or bad._ Chapter 6
-    
-
-#### 🧠 Human Vectors / Social Engineering
-
-- **Phishing / Smishing / Vishing** – broad net or laser-targeted.
-    
-- **Misinformation & Brand Impersonation** – distort reality, exploit trust.
-    
-- **Impersonation, Pretexting, BEC** – fake roles, forged invoices, CEO fraud.
-    
-- **Watering-Hole & Typosquatting** – poison the sites _you_ visit or URLs _you_ mistype.  
-    _Primary patch: user awareness + just-in-time verification._ Chapter 6
+- **IM threats** → end-to-end encrypted apps can still relay weaponized links or files. Chapter 6
     
 
 ---
 
-### 🔑 Quick Recall Cues
+### 🖼️ Image-Based Vectors – “Malware in the Pixels”
 
-- **“MMIV-R”** → Message, Media (image/file), Interactive (voice/Bluetooth), Vulnerable software, Remote devices.
+_Why it matters:_ Steganography hides code where antivirus seldom looks.
+
+- Embedded code or hidden URLs fire on open / preview.
     
-- **Ports & Passwords first**: if it listens or logs in, lock it down.
+- Defense: deep-image scanning & content-disarm-reconstruct (CDR). Chapter 6
+    
+
+---
+
+### 📂 File-Based Vectors – “Attachments with a Payload”
+
+- Malicious docs exploit macros / zero-days, then beacon out.
+    
+- Screen & sandbox unknown files; strip active content at the gateway. Chapter 6
+    
+
+---
+
+### 📞 Voice-Call Vectors – “Vishing & Caller-ID Spoof”
+
+- Social-engineered calls request wire transfers or MFA codes.
+    
+- Mitigation: call-back verification & STIR/SHAKEN anti-spoofing. Chapter 6
+    
+
+---
+
+### 🔌 Removable-Device Vectors – “USB = Digital Candy”
+
+- Dropped-USB trick auto-runs malware when curiosity wins.
+    
+- Enforce port control, auto-scan in sandbox, user training. Chapter 6
+    
+
+---
+
+### 🛠️ Vulnerable Software
+
+- **Unpatched code ≈ unlocked front door.**
+    
+- Client-based vs agentless scans (Nmap, Wireshark) find weak spots; patch ASAP. Chapter 6
+    
+
+---
+
+### ⏳ Unsupported Systems / Legacy Apps
+
+- No vendor patches → attacker playground (e.g., old Windows 7 kiosk).
+    
+- Isolate, virtualize, or retire. Chapter 6
+    
+
+---
+
+### 🌐 Unsecure Networks
+
+**Wireless 🛜**
+
+- Open Wi-Fi sends creds in cleartext; hide SSID, use WPA3, MAC filtering.
+    
+
+**Wired 🔌**
+
+- Live port in lobby = free network drop; disable unused jacks, 802.1X auth.
+    
+
+**Bluetooth 🔵**
+
+- Easy pairing → Bluejacking, Bluesnarfing; keep BT off when idle. Chapter 6
+    
+
+---
+
+### 🔓 Open Service Ports
+
+- Attackers sweep 0–65535 for RDP/SSH left open.
+    
+- Close, firewall, or port-knock; principle of least functionality. Chapter 6
+    
+
+---
+
+### 🔑 Default Credentials
+
+- “admin/admin” still found on routers & cameras.
+    
+- Force credential change at install; maintain password vault. Chapter 6
+    
+
+---
+
+### 🚚 Supply-Chain Threats
+
+- **MSPs**: one breach echoes to every client.
+    
+- **Vendors / Suppliers**: weaker partner gets popped → lateral into you (SolarWinds).
+    
+- Contractual security clauses, continuous third-party risk scoring. Chapter 6
+    
+
+---
+
+### 🧠 Human Vectors & Social Engineering
+
+|Tactic|Hook|Real-World Example|
+|---|---|---|
+|**Phishing / Spear**|Urgency, authority|“CEO needs gift cards now”|
+|**Smishing**|Fake delivery SMS|Malicious tracking link|
+|**Vishing**|Voice trust|“Bank fraud dept” asks OTP|
+|**Misinformation / Disinfo**|Panic, bias|Fake outage news moves stock|
+|**Impersonation / BEC**|Trusted identity|CFO wire-transfer scam|
+|**Pretexting**|Fabricated scenario|“IT support” asks for login|
+|**Watering-Hole**|Compromised legit site|Dept-of-Labor 2013 exploit|
+|**Brand Impersonation**|Look-alike portal|Spoofed PayPal login|
+|**Typosquatting**|URL typo trap|microsooft[.]com steals creds|
+
+---
+
+### 📝 Quick Recap
+
+- **Vectors** = paths attackers use; **attack surfaces** = exposed assets.
+    
+- Reduce risk by shrinking surfaces (patching, hardening) & disrupting vectors (filters, training).
+    
+- Remember: tech controls fail if humans click—layer defenses accordingly.
